@@ -32,15 +32,6 @@ const TableComponent: React.FC = () => {
 	} = useDataTable()
 	
 	
-	const formatDate = (dateString: string) => {
-		const options: Intl.DateTimeFormatOptions = {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric'
-		};
-		return new Date(dateString).toLocaleDateString('en-EN', options);
-	};
-	
 	const columns: TableColumnsType<DataType> = [
 		{
 			title: 'Имя',
